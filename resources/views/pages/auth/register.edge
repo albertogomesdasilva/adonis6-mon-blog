@@ -1,0 +1,27 @@
+@let(title ='Cadastrar')
+
+@include('partials/header')
+
+<div class="home">
+
+
+  <h1 class="text-center">{{ title }}</h1>
+  <form class="w-75 mx-auto p-3 bg-light rounded" action="" method="post" enctype="multipart/form-data">
+    {{ csrfField() }}
+    @!component('components/input', { name: 'username', label: 'Usuário' })
+    @!component('components/input', { name: 'email', label: 'Email' })
+    @!component('components/input', { name: 'thumbnail', label: 'Photo de profile', type: 'file' })
+    @!component('components/input', { name: 'password', label: 'Senha', type: 'password' })
+    <button class="btn btn-outline-info mt-2" type="submit" onclick="confirmar()">{{ title }}</button>
+
+  </form>
+
+<script>
+  function confirmar() {
+    confirm('Deseja mesmo Salvar?')
+  }
+</script>
+
+</div>
+
+@include('partials/footer')

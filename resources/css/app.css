@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+meio {
+  height: 800px;
+  width: 800px;
+  background-color: brown;
+  color:aliceblue;
+}
+
+
+footer {
+  border-radius: 8px;
+  position: fixed;
+  height: 15%;
+  bottom: 0px;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  color: aliceblue;
+}
+
+h5, a, span, p  {
+  color: aliceblue;
+}
+
+.home {
+  margin-top: 35px;
+}
+
+.navbar-brand {
+  background-color: rgb(202, 202, 203);
+  border-radius: 8px;
+  width: 130px;
+  text-align: center;
+}
