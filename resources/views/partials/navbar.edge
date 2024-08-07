@@ -5,6 +5,13 @@
       <div>
         <a href="{{route('auth.register')}}" class="btn btn-outline-info">Registrar</a>
         <a href="{{ route('auth.login')}}" class="btn btn-outline-info">Login</a>
+
+        // formulário de logout
+        <form action="{{ route('auth.logout') }}" ?_method="DELETE" class="d-inline">
+          @csrf
+          <button type="submit" class="btn btn-outline-info">Sair</button>
+        </form>
+
       </div>
     </div>
   </div>
